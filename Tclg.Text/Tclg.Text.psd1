@@ -15,7 +15,7 @@ RootModule = 'Tclg.Text.psm1'
 ModuleVersion = '0.0.1'
 
 # Supported PSEditions
-CompatiblePSEditions = @()
+CompatiblePSEditions = @('Core')
 
 # ID used to uniquely identify this module
 GUID = '99ab49fd-b163-45ec-a40b-a8bda22ded29'
@@ -39,7 +39,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Description = 'Contains PowerShell type extensions for System.String, as well as various other text-related functionalities.'
 
 # Minimum version of the PowerShell engine required by this module
-PowerShellVersion = '7.1'
+PowerShellVersion = '7.1.4'
 
 # Name of the PowerShell host required by this module
 PowerShellHostName = ''
@@ -48,10 +48,10 @@ PowerShellHostName = ''
 PowerShellHostVersion = ''
 
 # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-DotNetFrameworkVersion = ''
+# DotNetFrameworkVersion = ''
 
 # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-ClrVersion = ''
+# ClrVersion = ''
 
 # Processor architecture (None, X86, Amd64) required by this module
 ProcessorArchitecture = ''
@@ -60,13 +60,13 @@ ProcessorArchitecture = ''
 RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
-RequiredAssemblies = @()
+RequiredAssemblies = @('Tclg.PowerShell.Text.dll')
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 ScriptsToProcess = @()
 
 # Type files (.ps1xml) to be loaded when importing this module
-TypesToProcess = @()
+TypesToProcess = @('Tclg.Text.types.ps1xml')
 
 # Format files (.ps1xml) to be loaded when importing this module
 FormatsToProcess = @()
@@ -93,7 +93,12 @@ DscResourcesToExport = @()
 ModuleList = @()
 
 # List of all files packaged with this module
-FileList = @()
+FileList = @(
+    'Tclg.PowerShell.Text.dll'
+    'Tclg.Text.psd1'
+    'Tclg.Text.psm1'
+    'Tclg.Text.types.ps1xml'
+)
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
 PrivateData = @{
@@ -102,7 +107,13 @@ PrivateData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
         Tags = @(
+            'BOM'
+            'Encoding'
+            'extensions'
+            'String'
             'text'
+            'UTF8'
+            'UTF8Encoding'
         )
 
         # A URL to the license for this module.
