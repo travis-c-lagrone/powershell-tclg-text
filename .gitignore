@@ -409,3 +409,5 @@ FodyWeavers.xsd
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/powershell,csharp,visualstudiocode
+/out/
+/.user/
