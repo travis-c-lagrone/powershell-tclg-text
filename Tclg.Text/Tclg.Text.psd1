@@ -117,10 +117,10 @@ PrivateData = @{
         )
 
         # A URL to the license for this module.
-        LicenseUri = 'https://raw.githubusercontent.com/travis-c-lagrone/powershell-tclg-text/master/LICENSE'
+        LicenseUri = 'https://raw.githubusercontent.com/travis-c-lagrone/tclg.ps1-text/master/LICENSE'
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://github.com/travis-c-lagrone/powershell-tclg-text'
+        ProjectUri = 'https://github.com/travis-c-lagrone/tclg.ps1-text'
 
         # A URL to an icon representing this module.
         IconUri = ''
